@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="sowpoornika">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+       <div class="logo">Sow Poornika</div>
+       <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+       </div>
+    </nav>
+    <nav id="hamburger-nav">
+    <div class="logo">Sow Poornika</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience"onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#project"onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+
+    </div>
+    </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./mypic1.png" alt="sow poornika profile"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sow Poornika</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Resume_Sowpoornika_Format1.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="linkedin.png" 
+                alt="My Linkedin profile" 
+                class="icon" 
+                onclick="location.href='https://linkedin.com/in/sow-poornika'"
+                />
+                <img
+                 src="github.png" 
+                 alt="My githubrofile" 
+                 class="icon" 
+                 onclick="location.href='https://github.com/'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./mypic2.jpg" 
+                alt="profile picture" 
+                class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./experience.png"
+                         alt="experience icon" 
+                         class="icon"/>
+                        <h3>Experience</h3>
+                        <p>Intern <br> Software Engineer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./education.png"
+                        alt="education icon" 
+                        class="icon"/>
+                       <h3>Education</h3>
+                       <p> B.E<br> Computer Science Of Engineer</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <h3>About Me:</h3>
+                    <p>Hello there! I'm Sow Poornika, an aspiring software engineer with a burning passion for turning lines of code into meaningful solutions. As a recent graduate in B.E, I am thrilled to embark on this exciting journey into the dynamic world of software development.
+                    </p>
+                    <h3>My Journey:</h3>
+                    <p>My love for programming began during my college years, where I honed my skills in languages such as HTML,CSS. From crafting my first "Hello, World!" program to tackling complex coding challenges, I discovered the thrill of problem-solving and the joy of creating something from scratch.  </p>
+                    <h3>What Drives Me:</h3>
+                    <p> I am driven by the belief that technology has the power to shape a better future. The prospect of contributing to innovative projects that make a real impact motivates me every day. I am eager to immerse myself in the latest advancements in software engineering, from design patterns to emerging technologies, and apply this knowledge to create solutions that matter.
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./arrow.png" 
+        alt="arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                <h2 class="experience-sub-title">Frontend</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./checkmark.png" alt="experienceicon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./checkmark.png" alt="experienceicon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./checkmark.png" alt="experienceicon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Intermidiate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./checkmark.png" alt="experienceicon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+                <div class="details-container">
+                <h2 class="experience-sub-title">Backend</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./checkmark.png" alt="experienceicon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Python</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./checkmark.png" alt="experienceicon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>C++</h3>
+                            <p>basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+          </div>
+        </div>
+        <img 
+        src="./arrow.png" 
+        alt="arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"
+        /> 
+    </section>
+    <section id="project">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./project-1.png"
+                     alt="project-1"
+                     class="project-img"
+                     />
+                </div>
+                <h2 class="experience-sub-title project-title">Projec One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./project-2.png"
+                     alt="project-2"
+                     class="project-img"
+                     />
+                </div>
+                <h2 class="experience-sub-title project-title">Projec Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./project-3.png"
+                     alt="project-3"
+                     class="project-img"
+                     />
+                </div>
+                <h2 class="experience-sub-title project-title">Projec Three</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <img 
+        src="./arrow.png" 
+        alt="arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"
+        /> 
+    </section>
+    <section id="contact">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./email.png" 
+                alt="email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:sowpoornika030@gmail.com">sowpoornika030@mail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./linkedin.png" 
+                alt="linkedinon"
+                class="icon contact-icon"
+                />
+                <p><a href='https://linkedin.com/in/sow-poornika'>Linkedin</a></p>
+            </div>
+          </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                 </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Sow poornika. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
